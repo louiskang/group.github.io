@@ -6,20 +6,10 @@
 
 header {
   position: relative;
-/*  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;*/
   background-color: black;
   width: 100%;
   height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
+  padding: 8rem 0 2rem;
   overflow: hidden;
 }
 header .overlay {
@@ -50,22 +40,18 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 header h1 {
-/*  font-family: abril-display, "Didot", Georgia, "Times New Roman", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   font-weight: 900;
-  font-size: 2.5rem;
-  letter-spacing: 0.15rem; 
+  letter-spacing: 0.1rem; 
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
 }
 header h2 {
-/*  max-width: 24rem; */
-  font-weight: 100;
-  font-size: 1.2rem;
+  font-weight: 200;
 }
 header h3 {
-  font-size: 1.2rem;
+  font-weight: 500;
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(100, 161, 157, 1));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -73,16 +59,7 @@ header h3 {
 }
 @media (min-width: 768px) {
   header h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-    letter-spacing: 0.3rem; 
-  }
-  header h2 {
-/*    max-width: 30rem; */
-    font-size: 2rem;
-  }
-  header h3 {
-    font-size: 2rem;
+    letter-spacing: 0.2rem; 
   }
 }
 @media (min-width: 992px) {
@@ -90,36 +67,25 @@ header h3 {
     height: 100vh;
     padding: 0;
   }
-  header h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    letter-spacing: 0.4rem;
-  }
-  header h2 {
-/*    max-width: 40rem; */
-    font-size: 2.5rem;
-  }
-  header h2 {
-    font-size: 2.5rem;
+}
+@media (max-width: 991px) {
+  header .btn {
+    display: none;
   }
 }
 
 .intro-section {
-  padding-top: 5rem;
   background: linear-gradient(to bottom, #000000 0%, #202020 75%, #404040 100%);
-}
-.intro-section p {
-  margin-bottom: 5rem;
 }
 
 .research-section {
   padding: 10rem 0;
 }
-.research-section .research-text {
+.research-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .research-section .research-text {
+  .research-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
@@ -128,18 +94,31 @@ header h3 {
 .team-section {
   padding: 10rem 0;
 }
-.team-section .team-text {
-  padding: 3rem;
-  font-size: 90%;
+.team-section .person {
+  padding: 0 1rem;
 }
+.team-section .info {
+  background: #000000;
+}
+.team-section .name {
+  color: #ffffff;
+  font-weight: 500;
+}
+.team-section .role {
+  color: #ffffff;
+  font-weight: 200;
+}
+.team-section .text {
+  color: #d0d0d0;
+}
+.team-section button {
+  padding: 0.5rem 0.5rem;
+}
+
 @media (min-width: 992px) {
   .team-section .team-text {
-    padding: 5rem;
   }
-  .team-section .team-text hr {
-    border-color: #64a19d;
-    border-width: 0.25rem;
-    width: 30%;
+  .team-section .team-text {
   }
 }
 
@@ -148,7 +127,6 @@ header h3 {
 }
 .news-section .news-text {
   padding: 3rem;
-  font-size: 90%;
 }
 @media (min-width: 992px) {
   .news-section .news-text {
@@ -174,7 +152,6 @@ header h3 {
   padding: 1.25rem 2rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;

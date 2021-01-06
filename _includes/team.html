@@ -2,37 +2,45 @@
 <section class="team-section bg-light" id="team">
   <div class="container">
     <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-      <div class="col-lg-6"><img class="img-fluid" src="/img/demo-image-01.jpg" alt="" /></div>
-      <div class="col-lg-6">
-        <div class="bg-black text-center h-100 team">
-          <div class="d-flex h-100">
-            <div class="team-text w-100 my-auto text-center text-lg-left">
-              <h4 class="text-white">Louis Kang</h4>
-              <h4 class="text-white">Unit Leader</h4>
-              <p class="mb-0 text-white-50">My research goal is uncovering how hippocampal circuits produce memory and how they are disrupted in neurological diseases. My unique background in both theoretical physics and clinical medicine enables me to employ innovative yet rigorous approaches towards tackling this crucial problem. I obtained an MD and a PhD in theoretical physics, advised by Tom Lubensky, from the University of Pennsylvania. I became a Miller Fellow at the University of California, Berkeley and worked with Mike DeWeese at the Redwood Center for Theoretical Neuroscience. Now I'm trying to find opportunities to play piano and beach volleyball in Tokyo.</p>
-              <p class="mb-0 text-white-50">Email me at louis.kang@riken.jp | Download my CV</p>
-              <hr class="d-none d-lg-block mb-0 ml-0" />
-            </div>
+
+      <div class="person d-flex flex-column col-lg-6">
+        <div class="d-flex">
+          <img class="col-5" src="/img/team-louis.jpg" alt="" />
+          <div class="info d-flex flex-column align-items-center text-left h-100 col-7">
+            <h4 class="name">Louis Kang</h4>
+            <h5 class="role">Unit Leader</h5>
+            <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#louisText">
+              <span><i class="fas fa-plus fa-2x"></i></span><span class="toggle-hide"><i class="fas fa-minus fa-2x"></i></span>
+            </button>
           </div>
         </div>
+        <div class="info collapse" id="louisText">
+          <p class="text">My research goal is uncovering how hippocampal circuits produce memory and how they are disrupted in neurological diseases. My unique background in both theoretical physics and clinical medicine enables me to employ innovative yet rigorous approaches towards tackling this crucial problem. Now I'm trying to find opportunities to play piano and beach volleyball in Tokyo.</p>
+          <p class="mb-0 text-white-50">Email me at louis.kang@riken.jp | Download my CV</p>
+        </div>
       </div>
-    </div>
-    <!-- Project Two Row-->
-    <div class="row justify-content-center no-gutters">
-      <div class="col-lg-6"><img class="img-fluid" src="/img/demo-image-02.jpg" alt="" /></div>
-      <div class="col-lg-6 order-lg-first">
-        <div class="bg-black text-center h-100 team">
-          <div class="d-flex h-100">
-            <div class="team-text w-100 my-auto text-center text-lg-right">
-              <h4 class="text-white">Raymond Wang</h4>
-              <h4 class="text-white">Undergraduate Intern</h4>
-              <p class="mb-0 text-white-50">I'm a junior at the University of California, Berkeley, majoring in Electrical Engineering and Computer Science.</p>
+
+      <div class="container card d-flex flex-column col-lg-6">
+        <img class="img-fluid" src="/img/team-raymond.jpg" alt="" />
+        <div class="container info p-3 p-lg-5">
+          <div class="container d-flex flex-column">
+            <div class="container d-flex align-items-center">
+              <div class="container d-flex flex-column text-left">
+                <h4 class="name">Raymond Wang</h4>
+                <h5 class="role">Undergraduate Intern</h5>
+              </div>
+              <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#raymondText">
+                <span><i class="fas fa-plus fa-2x"></i></span><span class="toggle-hide"><i class="fas fa-minus fa-2x"></i></span>
+              </button>
+            </div>
+            <div class="collapse" id="raymondText">
+              <p class="text">I'm a junior at the University of California, Berkeley, majoring in Electrical Engineering and Computer Science.</p>
               <p class="mb-0 text-white-50">Email me at raymondwang@berkeley.edu | Download my CV</p>
-              <hr class="d-none d-lg-block mb-0 mr-0" />
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
