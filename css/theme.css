@@ -199,9 +199,12 @@ button.bg-black:focus {
   min-height: 3.5rem;
   background-color: #fff;
 }
+#mainNav .material-icons {
+  font-size: 2rem;
+}
 #mainNav .navbar-toggler {
   color: #64a19d;
-  padding: 0.5rem 0.5rem;
+  padding: 0.15rem 0.2rem;
   border: 0px;
 }
 #mainNav .navbar-toggler:hover {
