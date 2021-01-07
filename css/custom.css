@@ -95,32 +95,31 @@ header h3 {
   padding: 10rem 0;
 }
 .team-section .person {
-  padding: 0 1rem;
+  padding: 1.5rem 0;
 }
 .team-section .info {
-  background: #000000;
 }
 .team-section .name {
-  color: #ffffff;
+  display: inline;
   font-weight: 500;
 }
 .team-section .role {
-  color: #ffffff;
+  display: inline;
   font-weight: 200;
 }
 .team-section .text {
-  color: #d0d0d0;
+  margin: 0;
 }
-.team-section button {
-  padding: 0.5rem 0.5rem;
+.team-section .btn {
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem 0.3rem;
+}
+.team-section hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 30%
 }
 
-@media (min-width: 992px) {
-  .team-section .team-text {
-  }
-  .team-section .team-text {
-  }
-}
 
 .news-section {
   padding: 10rem 0;
