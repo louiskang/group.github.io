@@ -4,6 +4,10 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 
+* {
+  border-radius: 0 !important;
+}
+
 header {
   position: relative;
   background-color: black;
@@ -82,7 +86,7 @@ header .material-icons {
 }
 
 .team-section {
-  background: linear-gradient(to bottom, #FAFAFA 0%, #F0F0F0 75%, #E0E0E0 100%);
+  background: linear-gradient(to bottom, #FAFAFA 0%, #F0F0F0 calc(100% - 5rem), #E0E0E0 100%);
 }
 .team-section .person {
   padding: 1.5rem 0;
@@ -103,7 +107,8 @@ header .material-icons {
   margin: 0.2rem 0.3rem;
 }
 .team-section .material-icons {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin: 0 0.2rem 0 0;
 }
 .team-section hr {
   border-color: #64a19d;
@@ -111,37 +116,61 @@ header .material-icons {
   width: 30%
 }
 
-.research-section video {
-    width: 100%; 
+.research-section .vs {
+  min-height: 10%;
 }
-.research-section .title {
-  border-left: 0.5rem solid #64a19d;
-  padding: 0 0 0 2rem;
+.research-section .vr {
+  width: 0.5rem;
+  min-height: 80%;
+  margin: 0 1.2rem;
+  background-color: #64a19d !important;
 }
-.research-text {
-  padding: 2rem;
+.research-section .head .btn {
+  padding: 0.2rem 0.3rem;
+  margin: 0 0.5rem 0 0;
 }
-@media (min-width: 992px) {
-  .research-text {
-    padding: 0 0 0 2rem;
-  }
+.research-section .head .material-icons {
+  font-size: 2.5rem;
+}
+.research-section .references th {
+  font-size: 0.9rem;
+  font-weight: 300;
+  vertical-align: top;
+  width: 2.2rem;
+}
+.research-section .references td {
+  font-size: 0.9rem;
+  vertical-align: top;
+  padding: 0 0 0.5rem 0.2rem !important;
+}
+.research-section .references .btn {
+  padding: 0.18rem 0.25rem;
+  margin: 0 0 0 0;
 }
 
 .news-section {
-  padding: 10rem 0;
+  background: linear-gradient(to bottom, #E0E0E0 0%, #F0F0F0 5rem, #FAFAFA 100%);
 }
-.news-section .news-text {
-  padding: 3rem;
+.news-section .title {
+  color: #F0F0F0;
 }
-@media (min-width: 992px) {
-  .news-section .news-text {
-    padding: 5rem;
-  }
-  .news-section .news-text hr {
-    border-color: #64a19d;
-    border-width: 0.25rem;
-    width: 30%;
-  }
+.news-section .date {
+  font-size: 0.8rem;
+  color: #808080;
+  margin-bottom: 0.5rem;
+}
+.news-section .text {
+  color: #B0B0B0;
+  margin: 0;
+}
+.news-section hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 5rem;
+}
+
+.links-section {
+  background: linear-gradient(to bottom, #404040 0%, #202020 25%, #000000 100%);
 }
 
 .signup-section {
