@@ -242,7 +242,7 @@ button.bg-black:focus {
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: 0.5rem 0;
+    padding: 1.5rem 0 1rem;
     color: rgba(255, 255, 255, 0.6);
   }
   #mainNav .nav-link {
@@ -261,6 +261,8 @@ button.bg-black:focus {
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000000;
+    padding: 1rem 0 0.9rem;
+    border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000000;

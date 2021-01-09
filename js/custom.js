@@ -36,3 +36,16 @@ clipboard.on('error', function(e) {
   setTooltip(e.trigger, 'copy failed');
   hideTooltip(e.trigger);
 });
+
+// Initialize carousel
+$('#newsCarousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// Coming soon tooltip
+$('.btn-soon').tooltip({
+  trigger: 'click',
+  placement: 'bottom'
+});
