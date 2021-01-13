@@ -236,9 +236,14 @@ header .material-icons {
 }
 .flickity-page-dots .dot {
   height: 4px;
-  width: 3rem;
+  width: 2.5rem;
   margin: 0;
 }
+/*@media (min-width: 992px) {
+  .flickity-page-dots .dot:last-child {
+    width: 0;
+  }
+}*/
 
 
 .links-section {
