@@ -227,11 +227,14 @@ header .material-icons {
   color: #fff;
   background-color: #64a19d;
 }
-/*.flickity-prev-next-button {
+/*
+.flickity-prev-next-button {
   width: 3rem;
   height: 3rem;
   font-size: 6rem;
 }
+*/
+
 .flickity-prev-next-button.previous {
   left: -4rem;
 }
@@ -242,7 +245,7 @@ header .material-icons {
   height: 4px;
   width: 2.5rem;
   margin: 0;
-}*/
+}
 /*@media (min-width: 992px) {
   .flickity-page-dots .dot:last-child {
     width: 0;
