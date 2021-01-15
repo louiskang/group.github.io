@@ -234,12 +234,11 @@ header .material-icons {
   font-size: 6rem;
 }
 */
-
 .flickity-prev-next-button.previous {
-  left: -4rem;
+  left: -3.5rem;
 }
 .flickity-prev-next-button.next {
-  right: -4rem;
+  right: -3.5rem;
 }
 .flickity-page-dots .dot {
   height: 4px;
