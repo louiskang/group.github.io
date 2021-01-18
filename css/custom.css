@@ -200,7 +200,7 @@ header .material-icons {
 }
 
 .news-section #newsCarousel {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 .news-section .carousel-cell {
@@ -240,14 +240,21 @@ header .material-icons {
 .flickity-prev-next-button {
   width: 3rem;
   height: 3rem;
-  font-size: 6rem;
 }
 */
 .flickity-prev-next-button.previous {
-  left: -3.5rem;
+  left: -3.0rem;
 }
 .flickity-prev-next-button.next {
-  right: -3.5rem;
+  right: -3.0rem;
+}
+@media (min-width: 576px) {
+  .flickity-prev-next-button.previous {
+    left: -3.5rem;
+  }
+  .flickity-prev-next-button.next {
+    right: -3.5rem;
+  }
 }
 .flickity-page-dots .dot {
   height: 4px;
