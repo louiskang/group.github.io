@@ -28,12 +28,12 @@ function hideTooltip(btn) {
 var clipboard = new ClipboardJS('.btn');
 
 clipboard.on('success', function(e) {
-  setTooltip(e.trigger, 'copied to clipboard');
+  setTooltip(e.trigger, 'Copied to clipboard');
   hideTooltip(e.trigger);
 });
 
 clipboard.on('error', function(e) {
-  setTooltip(e.trigger, 'copy failed');
+  setTooltip(e.trigger, 'Copy failed');
   hideTooltip(e.trigger);
 });
 

@@ -200,7 +200,7 @@ header .material-icons {
 }
 
 .news-section #newsCarousel {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 .news-section .carousel-cell {
