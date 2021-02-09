@@ -1,10 +1,10 @@
 # Site settings
 title: Neural Circuits and Computations Unit
-short-title: Kang Group
+short-title: Kang Group | RIKEN Center for Brain Science
 affiliation: RIKEN Center for Brain Science
 email: louis.kang@riken.jp
 url: https://louiskang.group
-description: "We are a computational neuroscience research group at RIKEN Center for Brain Science that studies how memories are stored by neural circuits in our brains."
+description: "We are a computational neuroscience research group that studies how memories are stored by neural circuits in our brains."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
