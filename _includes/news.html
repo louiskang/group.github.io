@@ -3,47 +3,16 @@
   <div class="container">
 
     <div id="newsCarousel">
-      <div class="carousel-cell">
-        <h6 class="title">Raymond Wang will be presenting at Cosyne</h6>
-        <p class="date">11 Feb 2021</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">If you missed him at the SfN Global Connectome, Raymond will be presenting his work &ldquo;Multiple bumps enhance robustness to noise in continuous attractor networks&rdquo; at Cosyne. Visit him virtually at 19:00 US Pacific Time on 26 February 2021.</p>
-      </div>
+      {% for piece in site.data.news reversed %}
+      
+        <div class="carousel-cell">
+          <h6 class="title">{{ piece.title }}</h6>
+          <p class="date">{{ piece.date | date_to_string }}</p>
+          <hr class="mt-2 mb-2 ml-0"/>
+          <p class="text">{{ piece.text }}</p>
+        </div>
 
-      <div class="carousel-cell">
-        <h6 class="title">Kang Group hiring a postdoc or research scientist</h6>
-        <p class="date">11 Jan 2021</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">Are you interested in computational neuroscience, machine learning, and living in Tokyo? The Neural Circuits and Computations Unit is looking to hire a postdoc or research scientist! View our <a href="https://cbs.riken.jp/en/careers/20210107_w20220_l.kang_r.html">posting on the RIKEN Center for Brain Science website</a> for more information.</p>
-      </div>
-
-      <div class="carousel-cell">
-        <h6 class="title">Raymond Wang will be presenting at SfN Global Connectome</h6>
-        <p class="date">8 Dec 2020</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">Raymond will be presenting his work &ldquo;Multiple bumps enhance robustness to noise in continuous attractor networks&rdquo; at the Society for Neuroscience Global Connectome. Visit him virtually at 11:00 am US Pacific Time on 11 January 2021.</p>
-      </div>
-
-      <div class="carousel-cell">
-        <h6 class="title">Raymond Wang joins as an undergraduate intern</h6>
-        <p class="date">1 Nov 2020</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">Raymond, an undergraduate from University of California, Berkeley, joins the group as an intern. He is studying how noise in continuous attractor networks produce errors in path integration and methods of suppressing these errors. Welcome!</p>
-      </div>
-
-      <div class="carousel-cell">
-        <h6 class="title">Topological data analysis preprint on bioRxiv</h6>
-        <p class="date">8 Dec 2020</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">Read our preprint <a href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1">&ldquo;State space discovery in spatial representation circuits with persistent cohomology&rdquo;</a> to bioRxiv. This project explores and characterizes how topological data can be applied to neuroscience data. It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory.</p>
-      </div>
-
-      <div class="carousel-cell">
-        <h6 class="title">Neural Circuits and Computations Unit begins</h6>
-        <p class="date">1 Aug 2020</p>
-        <hr class="mt-2 mb-2 ml-0"/>
-        <p class="text">Welcome to the Neural Circuits and Computations Unit! Louis is excited to start his own research group in computational neuroscience at RIKEN Center for Brain Science. More to come soon.</p>
-      </div>
+      {% endfor %}
     </div>
 
   </div>

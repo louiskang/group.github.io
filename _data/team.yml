@@ -1,0 +1,14 @@
+- name: Louis Kang
+  role: Unit Leader
+  photo: "/media/team-louis.jpg"
+  about: My research goal is uncovering how hippocampal circuits produce memory and how they are disrupted in neurological diseases. My unique background in both theoretical physics and clinical medicine enables me to employ innovative yet rigorous approaches towards tackling this crucial problem. Now I'm trying to find opportunities to play piano and beach volleyball in Tokyo.
+  email: louis.kang@riken.jp
+  CV : "/docs/Louis_Kang_CV.pdf"
+
+- name: Raymond Wang
+  role: Undergraduate Student
+  photo: "/media/team-raymond.jpg"
+  about: I'm a third year undergraduate student at UC Berkeley. At the Redwood Center for Theoretical Neuroscience at UC Berkeley, I pursue research at the intersection of neuroscience, computer science and mathematics. My interests include understanding memory through a biological and computational perspective.
+  email: raymondwang@berkeley.edu
+  CV : "/docs/Raymond_Wang_CV.pdf"
+

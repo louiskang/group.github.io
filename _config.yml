@@ -1,19 +1,25 @@
-# Site settings
-title: Neural Circuits and Computations Unit
-short-title: Kang Group | RIKEN Center for Brain Science
-affiliation: RIKEN Center for Brain Science
-email: louis.kang@riken.jp
-url: https://louiskang.group
-description: "We are a computational neuroscience research group that studies how memories are stored by neural circuits in our brains."
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary-dark: '#000000'
-  links: '#64a19d'
-
 # Build settings
 markdown: kramdown
 permalink: pretty
 
 plugins:
   - jekyll-redirect-from
+
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-0: '#64a19d'
+  primary-1: '#548b87'
+  primary-2: '#4f837f'
+  primary-3: '#467370'
+
+icons:
+  copy: <i class="material-icons">content_copy</i> 
+  pdf: <i class="material-icons">save_alt</i> 
+  link: <i class="material-icons">link</i> 
+  more: <i class="material-icons">add</i> 
+  less: <i class="material-icons">remove</i> 

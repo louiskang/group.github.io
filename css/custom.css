@@ -1,3 +1,6 @@
+---
+---
+
 /*!
 * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2020 Start Bootstrap
@@ -140,7 +143,7 @@ header .material-icons {
   margin: 0 0.2rem 0 0;
 }
 .team-section hr {
-  border-color: #64a19d;
+  border-color: {{ site.color.primary-0 }};
   border-width: 0.25rem;
   width: 30%
 }
@@ -152,7 +155,7 @@ header .material-icons {
   width: 0.5rem;
   min-height: 80%;
   margin: 0 1.2rem;
-  background-color: #64a19d !important;
+  background-color: {{ site.color.primary-0 }} !important;
 }
 .research-section .head .btn {
   padding: 0.2rem 0.3rem;
@@ -194,7 +197,7 @@ header .material-icons {
   margin: 0;
 }
 .news-section hr {
-  border-color: #64a19d;
+  border-color: {{ site.color.primary-0 }};
   border-width: 0.25rem;
   width: 5rem;
 }
@@ -229,12 +232,12 @@ header .material-icons {
 }
 
 .flickity-button {
-  color: #64a19d;
+  color: {{ site.color.primary-0 }};
   background: transparent;
 }
 .flickity-button:hover {
   color: #fff;
-  background-color: #64a19d;
+  background-color: {{ site.color.primary-0 }};
 }
 /*
 .flickity-prev-next-button {
@@ -276,7 +279,7 @@ header .material-icons {
   width: 1.5rem;
 }
 .links-section svg {
-  fill: #64a19d; 
+  fill: {{ site.color.primary-0 }}; 
 }
 .links-section svg:hover {
   fill: white; 

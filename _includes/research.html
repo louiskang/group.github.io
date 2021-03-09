@@ -1,88 +1,70 @@
 <!-- Research Section -->
 <section class="research-section py-4 py-lg-5" id="research">
   <div class="container">
+    {% for project in site.data.research %}
+      {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
+      {% if parity == 'odd' %}{% assign left = true %}{% else %}{% assign left = false %}{% endif %}
 
-    <div class="project d-flex flex-column align-items-end my-6 my-lg-8">
-      <div class="d-flex flex-column flex-lg-row no-gutters my-lg-3">
-        <div class="d-flex col-lg-7 mb-3 mb-lg-0">
-          <div class="d-none d-md-inline-block"><div class="vs"></div><div class="vr"></div></div>
-          <div class="container px-0"><img class="img-fluid " src="/media/research-dual.png" alt=""/></div>
-        </div>
-        <div class="head d-flex flex-row-reverse flex-lg-column align-items-center align-items-lg-start justify-content-end col-lg-5 my-2 my-lg-3 ml-lg-5 text-left">
-          <h3 class="title mb-0 mb-lg-2">Memory hierarchy from complementary encoding pathways</h3>
-          <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#dualText" aria-expanded="false" aria-controls="dualText">
-            <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
-          </button>
-        </div>
-      </div>
-      <div class="container collapse" id="dualText">
-        <div class="text col-lg-8 mt-2 mt-lg-0 ml-auto px-0">
-          <p class="text-dark">When information enters the hippocampus, it is split into two pathways. Experiments suggest that they encode information with different amounts of sparsity and decorrelation. Yet, the computational capabilities granted by these two pathways are not clear.</p>
-          <p class="text-dark">We demonstrate how complementary encoding pathways can enable the hippocampus to perform unsupervised categorization while maintaining its ability to recall individual examples. The circuit can alternate on-the-fly between these two operating modes, generalization and differentiation, by adjusting its level of inhibition. Thus, representing information at different resolutions, which is considered a key feature of memory, can be implemented by neural circuits in the hippocampus.</p>
-        </div>
-      </div>
-    </div>
+      <div class="project d-flex flex-column align-items-end my-6 my-lg-8">
 
-    <div class="project d-flex flex-column align-items-center my-6 my-lg-8">
-      <div class="d-flex flex-column flex-lg-row-reverse align-items-end no-gutters my-lg-3">
-        <div class="d-flex flex-lg-row-reverse col-lg-7 mb-3 mb-lg-0">
-          <div class="d-none d-md-inline-block"><div class="vs"></div><div class="vr"></div></div>
-          <div class="container px-0"><img class="figure-alt img-fluid" src="/media/research-homology.png" alt="" /></div>
-        </div>
-        <div class="head d-flex flex-row-reverse flex-lg-column align-items-center align-items-lg-end justify-content-end col-lg-5 my-2 my-lg-3 mr-lg-4 text-lg-right">
-          <h3 class="title mb-0 mb-lg-2">Topological data analysis for neuroscience</h3>
-          <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#homologyText" aria-expanded="false" aria-controls="homologyText">
-            <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
-          </button>
-        </div>
-      </div>
-      <div class="container collapse" id="homologyText">
-        <div class="text col-lg-8 mt-2 mt-lg-0 mx-auto px-0">
-          <p class="text-dark">To operate effectively, the enormous number of neurons in brain circuits must coordinate their activity. Detecting signatures of coordination in large, complex sets of neural data may help us understand neural computation. One such signature is topological structure, such as loops and voids, formed by the data in high-dimensional phase space.</p>
-          <p class="text-dark">Persistent cohomology is a powerful technique for discovering topological structure in data. Strategies for its use in neuroscience are still undergoing development. We explore the application of persistent cohomology to the brain’s spatial representation system. Our results suggest guidelines for applying persistent cohomology to experimental neural recordings.</p>
-          <table class="references">
-            <tr>
-              <th></th>
-              <th><a class="btn btn-outline-primary" href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1"><i class="material-icons">link</i></a></th>
-              <td>Kang L, Xu B &amp; Morozov D. State space discovery in spatial representation circuits with persistent cohomology. <i>bioRxiv</i> (2020).</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
+        <div class="d-flex flex-column {% if left %} flex-lg-row {% else %} flex-lg-row-reverse align-items-end {% endif %} no-gutters my-lg-3">
+          <div class="d-flex {% unless left %} flex-lg-row-reverse {% endunless %} col-lg-7 mb-3 mb-lg-0">
+            <div class="d-none d-md-inline-block"><div class="vs"></div><div class="vr"></div></div>
+            <div class="container px-0">
+              {% if project.mp4 %}
+                <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
+              {% elsif project.image %}
+                <img class="img-fluid" src="{{ project.image }}" alt=""/>
+            {% endif %}
+            </div>
+          </div>
+          <div class="head d-flex flex-row-reverse flex-lg-column align-items-center {% if left %} align-items-lg-start {% else %} align-items-lg-end {% endif %} justify-content-end col-lg-5 my-2 my-lg-3 {% if left %} ml-lg-4 text-left {% else %} mr-lg-4 text-lg-right {% endif %}">
+            <h3 class="title mb-0 mb-lg-2">{{ project.title }}</h3>
+            <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#{{ project.id }}" aria-expanded="false" aria-controls="{{ project.id }}">
+              <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
+            </button>
+          </div>
 
-    <div class="project d-flex flex-column align-items-end my-6 my-lg-8">
-      <div class="d-flex flex-column flex-lg-row align-items-end no-gutters my-lg-3">
-        <div class="d-flex col-lg-7 mb-3 mb-lg-0">
-          <div class="d-none d-md-inline-block"><div class="vs"></div><div class="vr"></div></div>
-          <div class="container px-0"><video autoplay loop muted playsinline class="figure img-fluid"><source src="/media/research-replay.mp4" type="video/mp4"></video></div>
         </div>
-        <div class="head d-flex flex-row-reverse flex-lg-column align-items-center align-items-lg-start justify-content-end col-lg-5 my-2 my-lg-3 ml-lg-4 text-left">
-          <h3 class="title mb-0 mb-lg-2">Grid cell organization and dynamics</h3>
-          <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#replayText" aria-expanded="false" aria-controls="replayText">
-            <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
-          </button>
-        </div>
-      </div>
-      <div class="container collapse" id="replayText">
-        <div class="text col-lg-8 mt-2 mt-lg-0 ml-auto px-0">
-          <p class="text-dark">The entorhinal cortex (EC) contains grid cells, each of which only fires when we approach certain locations that form a triangular lattice in space. There is experimental evidence that the grid cell network can be modeled as a continuous attractor, in which neural activity evolves through a set of attractor states that represent different positions in the 2D environment.</p>
-          <p class="text-dark">However, existing attractor models did not capture several key phenomena exhibited by the grid system. Grid cells belong to modules, which suggests that spatial information is discretized in memories, and grid cells can fire in rapid sequences that may be related to memory consolidation or planning. Through simulations, we demonstrated how these phenomena arise in continuous attractors with the addition of experimentally observed or biologically plausible features of EC. Our results suggest mechanisms through which the hippocampal region performs memory-related computations.</p>
-          <table class="references">
-            <tr>
-              <th><a class="btn btn-outline-primary" href="https://elifesciences.org/articles/46687"><i class="material-icons">link</i></a></th>
-              <th><a class="btn btn-outline-primary" href="/docs/kang2019modules.pdf"><i class="material-icons">save_alt</i></a></th>
-              <td>Kang L &amp; Balasubramanian V. A geometric attractor mechanism for self-organization of entorhinal grid modules. <i>eLife</i> 8, e46687 (2019).</td>
-            </tr>
-            <tr>
-              <th><a class="btn btn-outline-primary" href="https://elifesciences.org/articles/46351"><i class="material-icons">link</i></a></th>
-              <th><a class="btn btn-outline-primary" href="/docs/kang2019replay.pdf"><i class="material-icons">save_alt</i></a></th>
-              <td>Kang L &amp; DeWeese MR. Replay as wavefronts and theta sequences as bump oscillations in a grid cell attractor network. <i>eLife</i> 8, e46351 (2019).</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
+        <div class="container collapse" id="{{ project.id }}">
 
+          <div class="text col-lg-8 mt-2 mt-lg-0 {% if left %} ml-auto {% else %} mx-auto {% endif %} px-0">
+            {% for par in project.text %}
+              <p class="text-dark">{{ par }}</p>
+            {% endfor %}
+            {% if project.refs %}
+              <table class="references">
+                {% for ref in project.refs %}
+                  <tr>
+                    {% capture link %}
+                      <th><a class="btn btn-outline-primary" href="{{ ref.link }}">{{ site.icons.link }}</a></th>
+                    {% endcapture %}
+                    {% capture pdf %}
+                      <th><a class="btn btn-outline-primary" href="{{ ref.pdf }}">{{ site.icons.pdf }}</a></th>
+                    {% endcapture %}
+                    {% if ref.link and ref.pdf %}
+                      {{ link }}
+                      {{ pdf }}
+                    {% elsif ref.link %}
+                      <th></th>
+                      {{ link }}
+                    {% elsif ref.pdf %}
+                      <th></th>
+                      {{ pdf }}
+                    {% else %}
+                      <th></th>
+                      <th></th>
+                    {% endif %}
+                    <td>{{ ref.citation }}</td>
+                  </tr>
+                {% endfor %}
+              </table>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+
+    {% endfor %}
   </div>
 </section>

@@ -1,0 +1,31 @@
+- title: Memory hierarchy from complementary encoding pathways
+  id: dual
+  image: "/media/research-dual.png"
+  text:
+    - When information enters the hippocampus, it is split into two pathways. Experiments suggest that they encode information with different amounts of sparsity and decorrelation. Yet, the computational capabilities granted by these two pathways are not clear.
+    - We demonstrate how complementary encoding pathways can enable the hippocampus to perform unsupervised categorization while maintaining its ability to recall individual examples. The circuit can alternate on-the-fly between these two operating modes, generalization and differentiation, by adjusting its level of inhibition. Thus, representing information at different resolutions, which is considered a key feature of memory, can be implemented by neural circuits in the hippocampus.
+
+- title: Topological data analysis for neuroscience
+  id: cohomology
+  image: "/media/research-homology.png"
+  text:
+    - To operate effectively, the enormous number of neurons in brain circuits must coordinate their activity. Detecting signatures of coordination in large, complex sets of neural data may help us understand neural computation. One such signature is topological structure, such as loops and voids, formed by the data in high-dimensional phase space.
+    - Persistent cohomology is a powerful technique for discovering topological structure in data. Strategies for its use in neuroscience are still undergoing development. We explore the application of persistent cohomology to the brain’s spatial representation system. Our results suggest guidelines for applying persistent cohomology to experimental neural recordings.
+  refs:
+    - citation: Kang L, Xu B &amp; Morozov D. State space discovery in spatial representation circuits with persistent cohomology. <i>bioRxiv</i> (2020).
+      link: "https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1"
+
+- title: Grid cell organization and dynamics
+  id: replay
+  mp4: "/media/research-replay.mp4"
+  text:
+    - The entorhinal cortex (EC) contains grid cells, each of which only fires when we approach certain locations that form a triangular lattice in space. There is experimental evidence that the grid cell network can be modeled as a continuous attractor, in which neural activity evolves through a set of attractor states that represent different positions in the 2D environment.
+    - However, existing attractor models did not capture several key phenomena exhibited by the grid system. Grid cells belong to modules, which suggests that spatial information is discretized in memories, and grid cells can fire in rapid sequences that may be related to memory consolidation or planning. Through simulations, we demonstrated how these phenomena arise in continuous attractors with the addition of experimentally observed or biologically plausible features of EC. Our results suggest mechanisms through which the hippocampal region performs memory-related computations.
+  refs:
+    - citation: Kang L &amp; Balasubramanian V. A geometric attractor mechanism for self-organization of entorhinal grid modules. <i>eLife</i> 8, e46687 (2019).
+      link: "https://elifesciences.org/articles/46687"
+      pdf: "/docs/kang2019modules.pdf"
+    - citation: Kang L &amp; DeWeese MR. Replay as wavefronts and theta sequences as bump oscillations in a grid cell attractor network. <i>eLife</i> 8, e46351 (2019).
+      link: "https://elifesciences.org/articles/46351"
+      pdf: "/docs/kang2019replay.pdf"
+
