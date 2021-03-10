@@ -15,6 +15,12 @@
  * MIT license
  */
 
+/**
+ * Louis Kang edits in proto.updateSlides
+ * v2.0.1
+ * MIT license
+ */
+
 /* jshint browser: true, strict: true, undef: true, unused: true */
 
 ( function( window, factory ) {
@@ -1449,63 +1455,6 @@ proto._sizeCells = function( cells ) {
 };
 
 // --------------------------  -------------------------- //
-/*
-var PrevNextButton = Flickity.PrevNextButton;
-PrevNextButton.prototype.update = function() {
-  // index of first or last slide, if previous or next
-  var cells = this.parent.cells;
-  // enable is wrapAround and at least 2 cells
-  if ( this.parent.options.wrapAround && cells.length > 1 ) {
-    this.enable();
-    return;
-  }
-
-  var method;
-  if ( this.isPrevious ) {
-    method = this.parent.selectedIndex <= 0 ? 'disable' : 'enable';
-  } else {
-    var boundIndex = cells.length ? cells.length - 1 : 0;
-    // if contain is set, check multiple final cells fit in viewport
-    if ( this.parent.options.contain && cells.length > 1) {
-      var lastSize = cells[ boundIndex ].size.outerWidth; 
-      // iterate through final cells; set boundary if previous cell 
-      for ( ; boundIndex > 0 ; boundIndex-- ) {
-        lastSize += cells[ boundIndex - 1 ].size.outerWidth;
-        if ( lastSize > this.parent.size.outerWidth ) {
-          break;
-        }
-      }
-    }
-    method = this.parent.selectedIndex >= boundIndex ? 'disable' : 'enable';
-  }
-  this[ method ]();
-};
-
-var PageDots = Flickity.PageDots;
-PageDots.prototype.setDots = function() {
-  // obtain boundIndex as in PrevNextButton
-  var cells = this.parent.cells;
-  var boundIndex = cells.length ? cells.length - 1 : 0;
-  if ( this.parent.options.contain && cells.length > 1) {
-    var lastSize = cells[ boundIndex ].size.outerWidth; 
-    for ( ; boundIndex > 0 ; boundIndex-- ) {
-      lastSize += cells[ boundIndex - 1 ].size.outerWidth;
-      if ( lastSize > this.parent.size.outerWidth ) {
-        break;
-      }
-    }
-  }
-
-  // get difference between number of valid cells and number of dots
-  var delta = boundIndex + 1 - this.dots.length;
-  if ( delta > 0 ) {
-    this.addDots( delta );
-  } else if ( delta < 0 ) {
-    this.removeDots( -delta );
-  }
-};
-*/
-
 proto.updateSlides = function() {
   this.slides = [];
   if ( !this.cells.length ) {
@@ -1519,6 +1468,19 @@ proto.updateSlides = function() {
 
   var canCellFit = this._getCanCellFit();
 
+  // identify last slide index based on how many final cells fit in viewport
+  var lastIndex = this.cells.length - 1;
+  if ( this.options.contain && !this.options.groupCells && this.cells.length > 1) {
+    var finalSize = this.cells[ lastIndex ].size.outerWidth; 
+    // iterate through final cells and stop when total size exceeds viewport size
+    for ( ; lastIndex > 0 ; lastIndex-- ) {
+      finalSize += this.cells[ lastIndex - 1 ].size.outerWidth;
+      if ( finalSize > this.size.outerWidth ) {
+        break;
+      }
+    }
+  }
+
   this.cells.forEach( function( cell, i ) {
     // just add cell if first cell in slide
     if ( !slide.cells.length ) {
@@ -1529,15 +1491,17 @@ proto.updateSlides = function() {
     var slideWidth = ( slide.outerWidth - slide.firstMargin ) +
       ( cell.size.outerWidth - cell.size[ nextMargin ] );
 
-    if ( canCellFit.call( this, i, slideWidth ) ) {
-      slide.addCell( cell );
-    } else {
-      // doesn't fit, new slide
-      slide.updateTarget();
+    if ( i <= lastIndex ) {
+      if ( canCellFit.call( this, i, slideWidth ) ) {
+        slide.addCell( cell );
+      } else {
+        // doesn't fit, new slide
+        slide.updateTarget();
 
-      slide = new Slide( this );
-      this.slides.push( slide );
-      slide.addCell( cell );
+        slide = new Slide( this );
+        this.slides.push( slide );
+        slide.addCell( cell );
+      }
     }
   }, this );
   // last slide
