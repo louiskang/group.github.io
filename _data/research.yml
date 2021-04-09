@@ -7,13 +7,14 @@
 
 - title: Topological data analysis for neuroscience
   id: cohomology
-  image: "/media/research-homology.png"
+  image: "/media/research-cohomology.png"
   text:
     - To operate effectively, the enormous number of neurons in brain circuits must coordinate their activity. Detecting signatures of coordination in large, complex sets of neural data may help us understand neural computation. One such signature is topological structure, such as loops and voids, formed by the data in high-dimensional phase space.
     - Persistent cohomology is a powerful technique for discovering topological structure in data. Strategies for its use in neuroscience are still undergoing development. We explore the application of persistent cohomology to the brain’s spatial representation system. Our results suggest guidelines for applying persistent cohomology to experimental neural recordings.
   refs:
-    - citation: Kang L, Xu B &amp; Morozov D. State space discovery in spatial representation circuits with persistent cohomology. <i>bioRxiv</i> (2020).
-      link: "https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1"
+    - citation: Kang L, Xu B &amp; Morozov D. Evaluating state space discovery by persistent cohomology in the spatial representation system. <i>Front Comput Neurosci</i> 15, 616748 (2021).
+      link: "https://www.frontiersin.org/articles/10.3389/fncom.2021.616748"
+      pdf: "/docs/kang2021cohomology.pdf"
 
 - title: Grid cell organization and dynamics
   id: replay

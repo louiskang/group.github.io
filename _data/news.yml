@@ -4,7 +4,7 @@
 
 - title: Topological data analysis preprint on bioRxiv
   date: 2020-10-08
-  text: Read our preprint <a href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1">&ldquo;State space discovery in spatial representation circuits with persistent cohomology&rdquo;</a> to bioRxiv. This project explores and characterizes how topological data can be applied to neuroscience data. It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory.
+  text: Read our preprint <a href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1">&ldquo;State space discovery in spatial representation circuits with persistent cohomology&rdquo;</a> to bioRxiv. This project explores and characterizes how topological data analysis can be applied to neuroscience data. It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory.
 
 - title: Raymond Wang joins as an undergraduate intern
   date: 2020-11-01
@@ -21,4 +21,8 @@
 - title: Raymond Wang will be presenting at Cosyne
   date: 2021-02-11
   text: If you missed him at the SfN Global Connectome, Raymond will be presenting his work &ldquo;Multiple bumps enhance robustness to noise in continuous attractor networks&rdquo; at Cosyne. Visit him virtually at 19:00 US Pacific Time on 26 February 2021.
+
+- title: Topological data analysis paper published in Frontiers
+  date: 2021-04-08
+  text: Our paper <a href="https://www.frontiersin.org/articles/10.3389/fncom.2021.616748">&ldquo;Evaluating state space discovery by persistent cohomology in the spatial representation system&rdquo;</a> is now published in Frontiers in Computational Neuroscience! It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory. We have improved upon our preprint with more rigorous analyses that have produced more impactful conclusions.
 
