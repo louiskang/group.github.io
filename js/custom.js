@@ -43,9 +43,3 @@ $('#newsCarousel').flickity({
   cellAlign: 'left',
   contain: true
 });
-
-// Coming soon tooltip
-$('.btn-soon').tooltip({
-  trigger: 'click',
-  placement: 'bottom'
-});
