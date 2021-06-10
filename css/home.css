@@ -6,6 +6,37 @@
 * Copyright 2013-2020 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
+#mainNav.navbar-expanded .navbar-brand .material-icons {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #mainNav.navbar .nav-link.active {
+    color: {{ site.color.primary-0 }};
+    outline: none;
+    border-bottom: 0.25rem solid {{ site.color.primary-0 }};
+  }
+  #mainNav.navbar-expanded {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav.navbar-expanded .navbar-brand {
+    padding: 1.5rem 0 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #mainNav.navbar-expanded .nav-link {
+    padding: 1.5rem 1.5rem 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #mainNav.navbar-expanded .navbar-brand:hover,
+  #mainNav.navbar-expanded .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #mainNav.navbar-expanded .navbar-brand:active,
+  #mainNav.navbar-expanded .nav-link:active {
+    color: #fff;
+  }
+}
 
 
 header {
@@ -107,6 +138,9 @@ header .material-icons {
     letter-spacing: 0.2rem; 
   }
 }
+
+
+
 
 
 .intro-section {
@@ -289,14 +323,4 @@ header .material-icons {
 }
 .links-section .btn-svg {
   padding: 0;
-}
-
-
-.subpage-link .btn {
-  font-size: 1.5rem;
-  padding: 0.3rem 0.5rem;
-  margin: 0.2rem 0.3rem;
-}
-.subpage-link .material-icons {
-  font-size: 1.5rem;
 }

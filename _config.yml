@@ -30,3 +30,4 @@ icons:
   forward: <i class="material-icons">arrow_forward</i> 
   back: <i class="material-icons">arrow_back</i> 
 
+news-limit: 8

@@ -3,7 +3,8 @@
   <div class="container">
 
     <div id="newsCarousel">
-      {% for piece in site.data.news reversed %}
+      {% assign news = site.data.news | reverse %}
+      {% for piece in news limit:site.news-limit %}
       
         <div class="carousel-cell">
           <h6 class="title">{{ piece.title }}</h6>
