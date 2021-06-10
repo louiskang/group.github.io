@@ -7,9 +7,6 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 
-* {
-  border-radius: 0 !important;
-}
 
 header {
   position: relative;
@@ -245,12 +242,6 @@ header .material-icons {
   color: #fff;
   background-color: {{ site.color.primary-0 }};
 }
-/*
-.flickity-prev-next-button {
-  width: 3rem;
-  height: 3rem;
-}
-*/
 .flickity-prev-next-button.previous {
   left: -3.0rem;
 }
@@ -271,15 +262,10 @@ header .material-icons {
   margin: 0;
 }
 @media (min-width: 576px) {
-.flickity-page-dots .dot {
-  width: 2.5rem;
-}
-}
-/*@media (min-width: 992px) {
-  .flickity-page-dots .dot:last-child {
-    width: 0;
+  .flickity-page-dots .dot {
+    width: 2.5rem;
   }
-}*/
+}
 
 
 .links-section {

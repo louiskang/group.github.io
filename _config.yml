@@ -10,6 +10,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+# Site settings
+url: https://louiskang.group
+title: Kang Group &bull; RIKEN Center for Brain Science
+
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-0: '#64a19d'
@@ -23,3 +27,6 @@ icons:
   link: <i class="material-icons">link</i> 
   more: <i class="material-icons">add</i> 
   less: <i class="material-icons">remove</i> 
+  forward: <i class="material-icons">arrow_forward</i> 
+  back: <i class="material-icons">arrow_back</i> 
+

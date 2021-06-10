@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,21 +8,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Kang Group | RIKEN Center for Brain Science</title>
+    {% if page.title %}
+      {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+    {% else %}
+      {% assign title = site.title %}
+    {% endif %}
+    <title>{{ title }}</title>
 
     <meta name="description" content="We are a computational neuroscience research group that studies how memories are stored by neural circuits in our brains.">
     <meta name="author" content="Louis Kang">
 
-    <link rel="canonical" href="https://louiskang.group/">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <link rel="icon" type="image/png" href="/media/brain-32.png"  sizes="32x32">
     <link rel="icon" type="image/png" href="/media/brain-128.png" sizes="128x128">
     <link rel="icon" type="image/png" href="/media/brain-256.png" sizes="256x256">
 
-    <!-- Custom CSS & Bootstrap Core CSS -->
+    <!-- Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/bootstrap.pruned.min.css">
-    <link rel="stylesheet" href="/assets/flickity/flickity.css">
     <link rel="stylesheet" href="/css/theme.css">
-    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom CSS -->
+    {% if layout.custom_css %}
+      {% for stylesheet in layout.custom_css %}
+      <link rel="stylesheet" href="{{ stylesheet }}">
+      {% endfor %}
+    {% endif %}
+    {% if page.custom_css %}
+      {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="{{ stylesheet }}">
+      {% endfor %}
+    {% endif %}
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/mum1wxq.css">
@@ -30,21 +47,25 @@
 
   <body id="page-top">
 
-    {% include nav.html %}
-    {% include header.html %}
-    {% include intro.html %}
-    {% include team.html %}
-    {% include research.html %}
-    {% include news.html %}
-    {% include links.html %}
+    {{ content }}
 
+    <!-- Core JS -->
     <script src="/assets/jquery.min.js"></script>
     <script src="/assets/jquery.easing.min.js"></script>
     <script src="/assets/bootstrap/bootstrap.bundle.pruned.min.js"></script>
-    <script src="/assets/flickity/flickity.custom.js"></script>
-    <script src="/assets/clipboard.min.js"></script>
     <script src="/assets/grayscale.js"></script>
-    <script src="/js/custom.js"></script>
+
+    <!-- Custom JS -->
+    {% if layout.custom_js %}
+      {% for script in layout.custom_js %}
+        <script src="{{ script }}"></script>
+      {% endfor %}
+    {% endif %}
+    {% if page.custom_js %}
+      {% for script in page.custom_js %}
+        <script src="{{ script }}"></script>
+      {% endfor %}
+    {% endif %}
 
   </body>
 
