@@ -105,6 +105,16 @@ header .spacer-arrow {
   height: 5vh;
   min-height: 2rem;
 }
+header .spacer-bottom {
+  width: 100%;
+  height: 5vh;
+  min-height: 2rem;
+}
+@media (min-width: 768px) {
+  header .spacer-bottom {
+    display: none;
+  }
+}
 header h1 {
   font-weight: 900;
   letter-spacing: 0.1rem; 
