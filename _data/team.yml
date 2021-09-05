@@ -5,6 +5,13 @@
   email: louis.kang@riken.jp
   CV : "/docs/Louis_Kang_CV.pdf"
 
+- name: Sebastian Eydam
+  role: Postdoctoral Researcher
+  photo: "/media/team-sebastian.jpg"
+  about: I am a nonlinear dynamics researcher with a focus on coupled oscillators and excitable systems. Currently, I am studying the dynamics of seizures in neuronal models to expand our knowledge about the dynamics of epileptic states. My research builds upon a combination of mathematical modeling, numerical simulations, and theoretical analysis.
+  email: richard.eydam@riken.jp
+  CV : "/docs/Sebastian_Eydam_CV.pdf"
+
 - name: Raymond Wang
   role: Undergraduate Student
   photo: "/media/team-raymond.jpg"
