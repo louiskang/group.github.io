@@ -200,15 +200,6 @@ header .material-icons {
   width: 30%
 }
 
-.research-section .vs {
-  min-height: 10%;
-}
-.research-section .vr {
-  width: 0.5rem;
-  min-height: 80%;
-  margin: 0 1.2rem;
-  background-color: {{ site.color.primary-0 }} !important;
-}
 .research-section .head .btn {
   padding: 0.2rem 0.3rem;
   margin: 0 0.5rem 0 0;

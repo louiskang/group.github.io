@@ -9,7 +9,6 @@
 
         <div class="d-flex flex-column {% if left %} flex-lg-row {% else %} flex-lg-row-reverse align-items-end {% endif %} no-gutters my-lg-3">
           <div class="d-flex {% unless left %} flex-lg-row-reverse {% endunless %} col-lg-7 mb-3 mb-lg-0">
-            <div class="d-none d-md-inline-block"><div class="vs"></div><div class="vr"></div></div>
             <div class="container px-0">
               {% if project.mp4 %}
                 <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
