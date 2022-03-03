@@ -4,7 +4,7 @@
 
 - title: Topological data analysis preprint on bioRxiv
   date: 2020-10-08
-  text: Read our preprint <a href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773v1">&ldquo;State space discovery in spatial representation circuits with persistent cohomology&rdquo;</a> to bioRxiv. This project explores how topological data analysis can be applied to neuroscience data. It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory.
+  text: Read our preprint <a href="https://www.biorxiv.org/content/10.1101/2020.10.06.328773">&ldquo;State space discovery in spatial representation circuits with persistent cohomology&rdquo;</a> on bioRxiv. This project explores how topological data analysis can be applied to neuroscience data. It is a collaboration with computational topologists Dmitriy Morozov and Boyan Xu at Lawrence Berkeley National Laboratory.
 
 - title: Raymond Wang joins as an undergraduate intern
   date: 2020-11-01
@@ -45,3 +45,7 @@
 - title: The Unit at Cosyne 2022
   date: 2022-02-07
   text: Raymond and Louis are excited to present &ldquo;Multiple bumps can enhance robustness to noise in continuous attractor networks&rdquo; and &ldquo;Multiscale encodings of memories in hippocampal and artificial networks&rdquo; at Cosyne 2022. These projects have been updated with many new results.
+
+- title: Bump number and noise robustness preprint on bioRxiv
+  date: 2022-02-25
+  text: Our bioRxiv preprint <a href="https://www.biorxiv.org/content/10.1101/2022.02.22.481545">&ldquo;Multiple bumps can enhance robustness to noise in continuous attractor networks&rdquo;</a> seeks to enhance our fundamental understanding of continuous attractor networks. Simulation results were obtained through the tenacious efforts of Raymond Wang.

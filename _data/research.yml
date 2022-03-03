@@ -5,6 +5,16 @@
     - When information enters the hippocampus, it is split into two pathways. Experiments suggest that they encode information with different amounts of sparsity and decorrelation. Yet, the computational capabilities granted by these two pathways are not clear.
     - We demonstrate how complementary encoding pathways can enable the hippocampus to perform unsupervised categorization while maintaining its ability to recall individual examples. The circuit can alternate on-the-fly between these two operating modes, generalization and differentiation, by adjusting its level of inhibition. Thus, representing information at different resolutions, which is considered a key feature of memory, can be implemented by neural circuits in the hippocampus.
 
+- title: Noise resilience in continuous attractor networks
+  id: bumps
+  mp4: "/media/research-bumps.mp4"
+  text:
+    - Our brains maintain internal representations of values related to the external world, which allows us to, for example, find our way to the door if the lights go off. Continuous attractor networks are one class of neural circuit used to accomplish this. Their accuracy is constantly challenged by many sources of noise present in biological systems.
+    - We discover a new means through which continuous attractor networks can enhance their robustness to noise. They can distribute their activity across multiple regions of activity, called attractor bumps, instead of concentrating it within a single bump. This observation may help to explain why the mammalian grid cell network appears to have evolved a multi-bump configuration.
+  refs:
+    - citation: Wang R &amp; Kang L. Multiple bumps can enhance robustness to noise in continuous attractor networks. <i>bioRxiv</i> (2022).
+      link: "https://www.biorxiv.org/content/10.1101/2022.02.22.481545"
+
 - title: Topological data analysis for neuroscience
   id: cohomology
   image: "/media/research-cohomology.png"
