@@ -9,8 +9,8 @@
   id: bumps
   mp4: "/media/research-bumps.mp4"
   text:
-    - Our brains maintain internal representations of values related to the external world, which allows us to, for example, find our way to the door if the lights go off. Continuous attractor networks are one class of neural circuit used to accomplish this. Their accuracy is constantly challenged by many sources of noise present in biological systems.
-    - We discover a new means through which continuous attractor networks can enhance their robustness to noise. They can distribute their activity across multiple regions of activity, called attractor bumps, instead of concentrating it within a single bump. This observation may help to explain why the mammalian grid cell network appears to have evolved a multi-bump configuration.
+    - Our brains maintain internal representations of values related to the external world, which allows us to, for example, find our way to the door if the lights go off. Continuous attractor networks are one class of neural circuit used to accomplish this. They contain localized regions of activity, called attractor bumps, whose positions can encode the value of a continuous variable. However, the brain is teeming with biological noise that perturbs the positions of the bumps and compromises the accuracy of the network.
+    - We discover a new means through which continuous attractor networks can enhance their robustness to noise. They can distribute their activity across multiple attractor bumps instead of concentrating it within a single bump. This observation contributes to our fundamental knowledge of attractor networks, and it may help to explain why the mammalian grid cell network appears to have evolved a multi-bump configuration.
   refs:
     - citation: Wang R &amp; Kang L. Multiple bumps can enhance robustness to noise in continuous attractor networks. <i>bioRxiv</i> (2022).
       link: "https://www.biorxiv.org/content/10.1101/2022.02.22.481545"
