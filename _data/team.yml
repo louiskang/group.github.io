@@ -12,6 +12,13 @@
   email: richard.eydam@riken.jp
   CV : "/docs/Sebastian_Eydam_CV.pdf"
 
+- name: Ulker Isayeva
+  role: PhD Student Intern
+  photo: "/media/team-ulker.jpg"
+  about: I am a PhD student in Neuroscience at the University of Cagliari, where my main research focuses on studying clinical and genetic determinants of psychiatric disorders, particularly schizophrenia. At the Neural Circuits and Computations Unit within RIKEN CBS, I am working on a project that studies network computations and seizure susceptibility. My research interests include psychiatric genetics, computational psychiatry, schizophrenia spectrum disorders, computational neuroscience, and machine learning.
+  email: u.isayeva@studenti.unica.it
+  CV : "/docs/Ulker_Isayeva_CV.pdf"
+
 - name: Raymond Wang
   role: Undergraduate Student
   photo: "/media/team-raymond.jpg"
