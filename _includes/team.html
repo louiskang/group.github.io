@@ -2,30 +2,40 @@
 <section class="team-section bg-light pt-6 pb-4 py-lg-7" id="team">
   <div class="container">
     <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-      {% for member in site.data.team %}
 
-        <div class="person row col-lg-8">
-          <div class="col-8 col-md-4 mb-2">
-            <img class="img-fluid" src="{{ member.photo }}" alt="" />
-          </div>
-          <div class="col-12 col-md-8 text-left">
-            <h5 class="name">{{ member.name }}</h4>
-            <h6 class="role">{{ member.role }}</h5>
-            <hr class="mt-1 mb-2 ml-0"/>
-            <p class="text text-dark">{{ member.about }}</p>
-            <div class='d-flex'>
-              {% if member.email %}
-                <button class="btn btn-copy btn-outline-primary d-flex align-items-center" data-clipboard-text="{{ member.email }}">
-                  {{ site.icons.copy }}{{ member.email }}</button>
-              {% endif %}
-              {% if member.CV %}
-                <a class="btn btn-outline-primary d-flex align-items-center" href="{{ member.CV }}">{{ site.icons.pdf }} CV</a>
-              {% endif %}
+      {% for member in site.data.team %}
+        {% unless member.alum %}
+
+          <div class="person row col-lg-8">
+            <div class="col-8 col-md-4 mb-2">
+              <img class="img-fluid" src="{{ member.photo }}" alt="" />
+            </div>
+            <div class="col-12 col-md-8 text-left">
+              <h5 class="name">{{ member.name }}</h5>
+              <h6 class="role">{{ member.role }}</h6>
+              <hr class="mt-1 mb-2 ml-0"/>
+              <p class="text text-dark">{{ member.about }}</p>
+              <div class='d-flex'>
+                {% if member.email %}
+                  <button class="btn btn-copy btn-outline-primary d-flex align-items-center" data-clipboard-text="{{ member.email }}">
+                    {{ site.icons.copy }}{{ member.email }}</button>
+                {% endif %}
+                {% if member.CV %}
+                  <a class="btn btn-outline-primary d-flex align-items-center" href="{{ member.CV }}">{{ site.icons.pdf }} CV</a>
+                {% endif %}
+              </div>
             </div>
           </div>
-        </div>
 
+        {% endunless %}
       {% endfor %}
+
+      <div class="container">
+        <div class="subpage-link pt-2 pt-lg-4 d-flex justify-content-center">
+          <a class="btn btn-outline-primary d-flex align-items-center" href="{% link group-alumni.html %}">Group alumni &nbsp; {{ site.icons.forward }}</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

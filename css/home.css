@@ -197,7 +197,7 @@ header .material-icons {
 .team-section hr {
   border-color: {{ site.color.primary-0 }};
   border-width: 0.25rem;
-  width: 30%
+  width: 30%;
 }
 
 .research-section .head .btn {

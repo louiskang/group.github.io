@@ -3,26 +3,36 @@
   photo: "/media/team-louis.jpg"
   about: My research goal is uncovering how hippocampal circuits produce memory and how they are disrupted in neurological diseases. My unique background in both theoretical physics and clinical medicine enables me to employ innovative yet rigorous approaches towards tackling this crucial problem. Now I'm trying to find opportunities to play piano and beach volleyball in Tokyo.
   email: louis.kang@riken.jp
-  CV : "/docs/Louis_Kang_CV.pdf"
+  CV: "/docs/Louis_Kang_CV.pdf"
 
 - name: Sebastian Eydam
   role: Postdoctoral Researcher
   photo: "/media/team-sebastian.jpg"
   about: I am a nonlinear dynamics researcher with a focus on coupled oscillators and excitable systems. Currently, I am studying the dynamics of seizures in neuronal models to expand our knowledge about the dynamics of epileptic states. My research builds upon a combination of mathematical modeling, numerical simulations, and theoretical analysis.
   email: richard.eydam@riken.jp
-  CV : "/docs/Sebastian_Eydam_CV.pdf"
+  CV: "/docs/Sebastian_Eydam_CV.pdf"
+
+- name: Ismaeel Ramzan
+  role: Postdoctoral Researcher
+  photo: "/media/team-ismaeel.jpg"
+  about: My PhD research focused on using machine learning to make predictions of quantum forces in chemical systems. My current research involves looking at spiking neural networks and how they can potentially help us understand epilepsy better. I enjoy a wide range of things and coming up with creative solutions to problems. I usually have multiple projects on the go, and look forward to collaborations with others here at RIKEN! 
+  email: ismaeel.ramzan@riken.jp
+  CV: "/docs/Ismaeel_Ramzan_CV.pdf"
 
 - name: Ulker Isayeva
   role: PhD Student Intern
   photo: "/media/team-ulker.jpg"
   about: I am a PhD student in Neuroscience at the University of Cagliari, where my main research focuses on studying clinical and genetic determinants of psychiatric disorders, particularly schizophrenia. At the Neural Circuits and Computations Unit within RIKEN CBS, I am working on a project that studies network computations and seizure susceptibility. My research interests include psychiatric genetics, computational psychiatry, schizophrenia spectrum disorders, computational neuroscience, and machine learning.
   email: u.isayeva@studenti.unica.it
-  CV : "/docs/Ulker_Isayeva_CV.pdf"
+  CV: "/docs/Ulker_Isayeva_CV.pdf"
 
 - name: Raymond Wang
   role: Undergraduate Student
   photo: "/media/team-raymond.jpg"
   about: I'm a third year undergraduate student at UC Berkeley. At the Redwood Center for Theoretical Neuroscience at UC Berkeley, I pursue research at the intersection of neuroscience, computer science and mathematics. My interests include understanding memory through a biological and computational perspective.
   email: raymondwang@berkeley.edu
-  CV : "/docs/Raymond_Wang_CV.pdf"
-
+  CV: "/docs/Raymond_Wang_CV.pdf"
+  alum: true
+  years: 2020&ndash;2022
+  history:
+    - "2022 update: PhD Student at MIT in the Department of Brain and Cognitive Sciences"

@@ -1,17 +1,22 @@
 ---
 layout: sub
-title: Group Alumni
+title: Group alumni
 custom_css:
-  - /css/news.css
+  - /css/group-alumni.css
 back_anchor: team
 ---
 
-{% assign news = site.data.news | reverse %}
-{% for piece in news offset:site.news-limit %}
-  <div class="piece">
-    <p class="date">{{ piece.date | date_to_string }}</p>
-    <h6 class="title">{{ piece.title }}</h6>
-    <p class="text">{{ piece.text }}</p>
-  </div>
+{% for member in site.data.team %}
+  {% if member.alum %}
+    <div class="person">
+      <h5 class="name">{{ member.name }}</h5>
+      <ul class="history">
+        <li class="item">{{ member.years }}: {{ member.role }} in the Kang Group</li>
+        {% for item in member.history %}
+          <li class="item">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 {% endfor %}
 
