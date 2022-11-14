@@ -12,8 +12,9 @@
     - Our brains maintain internal representations of values related to the external world, which allows us to, for example, find our way to the door if the lights go off. Continuous attractor networks are one class of neural circuit used to accomplish this. They contain localized regions of activity, called attractor bumps, whose positions can encode the value of a continuous variable. However, the brain is teeming with biological noise that perturbs the positions of the bumps and compromises the accuracy of the network.
     - We uncover a new means through which continuous attractor networks can enhance their robustness to noise. They can distribute their activity across multiple attractor bumps instead of concentrating it within a single bump. While such configurations have been considered by researchers, the connection between bump number and noise resilience had not been appreciated. This observation contributes to our fundamental knowledge of attractor networks, and it may help to explain why the mammalian grid cell network appears to have evolved a multi-bump configuration.
   refs:
-    - citation: Wang R &amp; Kang L. Multiple bumps can enhance robustness to noise in continuous attractor networks. <i>bioRxiv</i> (2022).
-      link: "https://www.biorxiv.org/content/10.1101/2022.02.22.481545"
+    - citation: Wang R &amp; Kang L. Multiple bumps can enhance robustness to noise in continuous attractor networks. <i>PLOS Comput Biol</i> 18, e1010547 (2022).
+      link: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010547"
+      pdf: "/docs/wang2022bumps.pdf"
 
 - title: Topological data analysis for neuroscience
   id: cohomology
