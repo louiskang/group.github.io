@@ -73,3 +73,11 @@
 - title: New papers by Raymond and Ulya
   date: 2022-11-11
   text: Congraulations to Raymond on publishing his first paper on <a href="https://doi.org/10.1371/journal.pcbi.1010547">noise resilience and bump number in continuous attractor networks</a>. Ulya has also published her PhD work on <a href="https://doi.org/10.1192/j.eurpsy.2022.2333">the role of BDNF in the pathogenesis of schizophrenia</a>. These Kang Group interns are off doing great things.
+
+- title: New preprints with Taro Toyoizumi
+  date: 2023-02-21
+  text: We have posted two preprints about how the hippocampus can retrieve both example-like and concept-like memories. <a href="https://www.biorxiv.org/content/10.1101/2022.02.22.481545">The first</a> comprehensively explores this topic through biological modeling, experimental data analysis, and machine learning. <a href="https://arxiv.org/abs/2302.04481">The second</a> derives mathematical formulas that underlie the behavior of our model.
+
+- title: Cosyne workshop on attractors
+  date: 2023-03-03
+  text: If you're attending Cosyne 2023, check out <a href="https://www.cosyne.org/workshops-program-2023">&ldquo;Seeking universality while celebrating heterogeneity among biological attractor networks,&rdquo;</a> a two-day workshop organized by Louis and John Widloski at UC Berkeley. We will bring together theorists and experimentalists across navigation, working memory, decision making, sensorimotor control, olfaction, machine learning, and other fields. Hope to see you there!
