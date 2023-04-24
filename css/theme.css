@@ -8,6 +8,13 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
 */
 
+/* Fixing borders on iPhone */
+video {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
 html {
   font-size: 16px;
 }
@@ -113,7 +120,7 @@ img {
   background-color: {{ site.color.primary-0 }};
   border-color: {{ site.color.primary-0 }};
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary.hover {
   background-color: {{ site.color.primary-1 }};
   border-color: {{ site.color.primary-2 }};
 }
@@ -137,10 +144,10 @@ img {
   color: {{ site.color.primary-0 }};
   border-color: {{ site.color.primary-0 }};
 }
-.btn-outline-primary:hover {
+.btn-outline-primary:hover, .btn-outline-primary.hover {
   background-color: {{ site.color.primary-0 }};
   border-color: {{ site.color.primary-0 }};
-  color: #ffffff;
+  color: #fff;
 }
 .btn-outline-primary:focus, .btn-outline-primary.focus {
 /*  box-shadow: 0 0 0 0.2rem rgba(100, 161, 157, 0.5);
@@ -162,6 +169,9 @@ img {
 }
 .btn-link:hover {
   color: {{ site.color.primary-3 }};
+}
+button.btn-null {
+  all: unset;
 }
 
 .tooltip {

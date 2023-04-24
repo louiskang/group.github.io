@@ -97,3 +97,15 @@ $('#newsCarousel').flickity({
   cellAlign: 'left',
   contain: true
 });
+
+$('.research-section .project').on({
+  click: function() {
+    $(this).parent().parent().find('.icon').trigger('click');
+  },
+  mouseenter: function() {
+    $(this).parent().parent().find('.icon').addClass('hover');
+  },
+  mouseleave: function() {
+    $(this).parent().parent().find('.icon').removeClass('hover');
+  }
+}, '.content');

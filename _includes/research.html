@@ -9,17 +9,17 @@
 
         <div class="d-flex flex-column {% if left %} flex-lg-row {% else %} flex-lg-row-reverse align-items-end {% endif %} no-gutters my-lg-3">
           <div class="d-flex {% unless left %} flex-lg-row-reverse {% endunless %} col-lg-7 mb-1 mb-lg-0">
-            <div class="container px-0">
+            <button type="button" class="btn-null content"><div class="container px-0">
               {% if project.mp4 %}
                 <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
               {% elsif project.image %}
                 <img class="img-fluid" src="{{ project.image }}" alt=""/>
             {% endif %}
-            </div>
+            </div></button>
           </div>
           <div class="head d-flex flex-row-reverse flex-lg-column align-items-center {% if left %} align-items-lg-start {% else %} align-items-lg-end {% endif %} justify-content-end col-lg-5 my-2 my-lg-3 {% if left %} ml-lg-4 text-left {% else %} mr-lg-4 text-lg-right {% endif %}">
-            <h3 class="title mb-0 mb-lg-2">{{ project.title }}</h3>
-            <button type="button" class="btn btn-outline-primary toggle-text" data-toggle="collapse" data-target="#{{ project.id }}" aria-expanded="false" aria-controls="{{ project.id }}">
+            <button type="button" class="btn-null content"><h3 class="title mb-0 mb-lg-2">{{ project.title }}</h3></button>
+            <button type="button" class="btn btn-outline-primary toggle-text icon" data-toggle="collapse" data-target="#{{ project.id }}" aria-expanded="false" aria-controls="{{ project.id }}">
               <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
             </button>
           </div>
