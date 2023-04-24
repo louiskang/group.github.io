@@ -19,13 +19,6 @@
   email: ismaeel.ramzan@riken.jp
   CV: "/docs/Ismaeel_Ramzan_CV.pdf"
 
-- name: Ulker Isayeva
-  role: PhD Student Intern
-  photo: "/media/team-ulker.jpg"
-  about: I am a PhD student in Neuroscience at the University of Cagliari, where my main research focuses on studying clinical and genetic determinants of psychiatric disorders, particularly schizophrenia. At the Neural Circuits and Computations Unit within RIKEN CBS, I am working on a project that studies network computations and seizure susceptibility. My research interests include psychiatric genetics, computational psychiatry, schizophrenia spectrum disorders, computational neuroscience, and machine learning.
-  email: u.isayeva@studenti.unica.it
-  CV: "/docs/Ulker_Isayeva_CV.pdf"
-
 - name: Raymond Wang
   role: Undergraduate Student
   photo: "/media/team-raymond.jpg"
@@ -36,3 +29,28 @@
   years: 2020&ndash;2022
   history:
     - "2022 update: PhD Student at MIT in the Department of Brain and Cognitive Sciences"
+
+- name: Ulker Isayeva
+  role: PhD Student Intern
+  photo: "/media/team-ulker.jpg"
+  about: I am a PhD student in Neuroscience at the University of Cagliari, where my main research focuses on studying clinical and genetic determinants of psychiatric disorders, particularly schizophrenia. At the Neural Circuits and Computations Unit within RIKEN CBS, I am working on a project that studies network computations and seizure susceptibility. My research interests include psychiatric genetics, computational psychiatry, schizophrenia spectrum disorders, computational neuroscience, and machine learning.
+  email: u.isayeva@studenti.unica.it
+  CV: "/docs/Ulker_Isayeva_CV.pdf"
+  alum: true
+  years: 2022
+  history:
+    - "2022 update: PhD Student in Neuroscience at the University of Cagliari"
+
+- name: Hannah Nemeth
+  role: Undergraduate Student Intern
+  photo: "/media/team-hannah.jpg"
+  about: I am an undergraduate student majoring in Applied Physics at Rensselaer Polytechnic Institute where my research focuses on materials discovery and predicting properties of 2D magnetic materials using machine learning. At RIKEN CBS, I am now studying how spiking neural networks can be trained for advancements in epilepsy research. I am interested in interdisciplinary research involving machine learning and computational physics. Outside of the lab, I enjoy practicing Kendo and Jodo.
+  email: nemeth@rpi.edu
+  CV: "/docs/Hannah_Nemeth_CV.pdf"
+
+- name: Ignacio Taguas
+  role: PhD Student Intern
+  photo: "/media/team-ignacio.jpg"
+  about: I am a PhD student at the Center for Cognitive and Computational Neuroscience in Madrid. My main interest lies in understanding the mechanisms underlying brain disorders, and this stems from my experience working with children who have neurodevelopmental disorders. I use neuroimaging and computational tools to uncover how pathological states disrupt functional brain networks. 
+  email: itaguas@ucm.es
+  CV: "/docs/Ignacio_Taguas_CV.pdf"
