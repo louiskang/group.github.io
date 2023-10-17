@@ -28,7 +28,7 @@
   alum: true
   years: 2020&ndash;2022
   history:
-    - "2022 update: PhD Student at MIT in the Department of Brain and Cognitive Sciences"
+    - "2022 update: PhD student at MIT in the Department of Brain and Cognitive Sciences"
 
 - name: Ulker Isayeva
   role: PhD Student Intern
@@ -39,7 +39,7 @@
   alum: true
   years: 2022
   history:
-    - "2022 update: PhD Student in Neuroscience at the University of Cagliari"
+    - "2022 update: PhD student in Neuroscience at the University of Cagliari"
 
 - name: Hannah Nemeth
   role: Undergraduate Student Intern
@@ -47,6 +47,10 @@
   about: I am an undergraduate student majoring in Applied Physics at Rensselaer Polytechnic Institute where my research focuses on materials discovery and predicting properties of 2D magnetic materials using machine learning. At RIKEN CBS, I am now studying how spiking neural networks can be trained for advancements in epilepsy research. I am interested in interdisciplinary research involving machine learning and computational physics. Outside of the lab, I enjoy practicing Kendo and Jodo.
   email: nemeth@rpi.edu
   CV: "/docs/Hannah_Nemeth_CV.pdf"
+  alum: true
+  years: 2023
+  history:
+    - "2023 update: Undergrduate student in Applied Physics at Rensselaer Polytechnic Institute"
 
 - name: Ignacio Taguas
   role: PhD Student Intern
@@ -54,3 +58,14 @@
   about: I am a PhD student at the Center for Cognitive and Computational Neuroscience in Madrid. My main interest lies in understanding the mechanisms underlying brain disorders, and this stems from my experience working with children who have neurodevelopmental disorders. I use neuroimaging and computational tools to uncover how pathological states disrupt functional brain networks. 
   email: itaguas@ucm.es
   CV: "/docs/Ignacio_Taguas_CV.pdf"
+  alum: true
+  years: 2023
+  history:
+    - "2023 update: PhD student at the Center for Cognitive and Computational Neuroscience in Madrid"
+
+- name: Martin Bjerke
+  role: PhD Student Intern
+  photo: "/media/team-martin.jpg"
+  about: I’m a PhD Candidate at the Department of Mathematics, Norwegian University of Science and Technology. My research lies in the intersection of statistics and computational neuroscience, where I work on latent variable discovery and ensemble detection in large scale neural recordings, using novel techniques from machine learning. When not at work, I enjoy (among other things) cooking food and ice skating. 
+  email: martin.bjerke@ntnu.no
+  CV: "/docs/Martin_Bjerke_CV.pdf"
