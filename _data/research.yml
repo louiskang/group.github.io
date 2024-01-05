@@ -7,8 +7,8 @@
   refs:
     - citation: Kang L &amp; Toyoizumi T. Distinguishing examples while building concepts in hippocampal and artificial networks. <i>bioRxiv</i> (2023).
       link: "https://www.biorxiv.org/content/10.1101/2023.02.21.529365"
-    - citation: Kang L &amp; Toyoizumi T. A Hopfield-like model with complementary encodings of memories. <i>arXiv</i> (2023).
-      link: "https://arxiv.org/abs/2302.04481"
+    - citation: Kang L &amp; Toyoizumi T. Hopfield-like model with complementary encodings of memories. <i>Phys Rev E</i> 108, 054410 (2023).
+      link: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.054410"
 
 
 - title: Noise resilience in continuous attractor networks

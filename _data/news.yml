@@ -97,3 +97,15 @@
 - title: Sebastian tours his work in Europe
   date: 2023-09-27
   text: If you didn't catch Sebastian at Dynamic Days Europe or IBRO, find him today at the Bernstein Conference. He will present his poster &ldquo;Metabolic dynamics in systems of quadratic integrate and fire neurons and the connection to epilepsy.&rdquo;
+
+- title: Martin joins for the autumn
+  date: 2023-09-27
+  text: Martin Bjerke will be arriving from the Norwegian University of Science and Technology to work on topological data analysis and other methods for understanding neuroscience data. Welcome!
+
+- title: Louis presents at SfN
+  date: 2023-11-01
+  text: Louis will be sharing his work with Taro Toyoizumi at Neuroscience 2023. It represents the culmination of a large project on storing memories at both more specific and more generalized scales. Look out soon for our manuscripts, which have already been accepted for publication.
+
+- title: Memory encoding paper 1 of 2 in Phys Rev E
+  date: 2023-12-01
+  text: Our model for storing both example-like and concept-like memories has been published in <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.054410">Physical Review E</a>. We present detailed mathematical derivations of its capacities in the mean-field limit as well as simulations that characterize its capabilities to link memories across types.
