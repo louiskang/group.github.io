@@ -5,8 +5,9 @@
     - The hippocampal region CA3 is believed to produce memories from incoming sensory information. Before arriving at CA3, this information stream is split along two neural pathways with different encoding properties&mdash;one is more correlated than the other. We construct a model of CA3 that incorporates this architecture to investigate its computational purpose. Our model reveals that decorrelated encodings maintain distinctions between similar experiences, whereas correlated encodings build concepts from them. This explains how the hippocampus forms distinct memories for separate visits with your grandmother while integrating them through &ldquo;grandmother cells&rdquo; that respond to many different forms of her.
     - Our model proposes that example-like and concept-like encodings are accessed at different phases of the theta oscillation, which is a dominant brain rhythm in the hippocampus. Its predictions stand up to extensive experimental tests using publicly available neural recordings. Finally, we extend our insights from the hippocampus to machine learning by introducing a novel HalfCorr loss function that endows neural networks with CA3-like complementary encodings. HalfCorr networks outperform networks with only single encoding types in a multitask learning paradigm, demonstrating how computational advantages found within neural systems can be unlocked through bio-inspired artificial intelligence.
   refs:
-    - citation: Kang L &amp; Toyoizumi T. Distinguishing examples while building concepts in hippocampal and artificial networks. <i>bioRxiv</i> (2023).
-      link: "https://www.biorxiv.org/content/10.1101/2023.02.21.529365"
+    - citation: Kang L &amp; Toyoizumi T. Distinguishing examples while building concepts in hippocampal and artificial networks. <i>Nat Commun</i> 15, 647 (2024).
+      link: "https://www.nature.com/articles/s41467-024-44877-0"
+      pdf: "/docs/kang2024complementary.pdf"
     - citation: Kang L &amp; Toyoizumi T. Hopfield-like model with complementary encodings of memories. <i>Phys Rev E</i> 108, 054410 (2023).
       link: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.054410"
       pdf: "/docs/kang2023hopfield.pdf"

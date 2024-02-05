@@ -109,3 +109,7 @@
 - title: Memory encoding paper 1 of 2 in Phys Rev E
   date: 2023-12-01
   text: Our model for storing both example-like and concept-like memories has been published in <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.054410">Physical Review E</a>. We present detailed mathematical derivations of its capacities in the mean-field limit as well as simulations that characterize its capabilities to link memories across types.
+
+- title: Memory encoding paper 2 of 2 in Nature Communications
+  date: 2023-12-01
+  text: Our model's connections to brains and AI neural networks has been published in <a href="https://www.nature.com/articles/s41467-024-44877-0">Nature Communications</a>. We find evidence for the hippocampus encodes memories
