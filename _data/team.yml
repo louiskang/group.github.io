@@ -69,3 +69,7 @@
   about: I’m a PhD Candidate at the Department of Mathematics, Norwegian University of Science and Technology. My research lies in the intersection of statistics and computational neuroscience, where I work on latent variable discovery and ensemble detection in large scale neural recordings, using novel techniques from machine learning. When not at work, I enjoy (among other things) cooking food and ice skating. 
   email: martin.bjerke@ntnu.no
   CV: "/docs/Martin_Bjerke_CV.pdf"
+  alum: true
+  years: 2023
+  history:
+    - "2023 update: PhD student in Statistics at Norwegian University of Science and Technology"
