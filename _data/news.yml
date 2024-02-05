@@ -111,5 +111,9 @@
   text: Our model for storing both example-like and concept-like memories has been published in <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.054410">Physical Review E</a>. We present detailed mathematical derivations of its capacities in the mean-field limit as well as simulations that characterize its capabilities to link memories across types.
 
 - title: Memory encoding paper 2 of 2 in Nature Communications
-  date: 2023-12-01
+  date: 2024-01-20
   text: Our model's connections to hippocampal neurons and AI neural networks has been published in <a href="https://www.nature.com/articles/s41467-024-44877-0">Nature Communications</a>. We uncover signatures predicted by our model in recordings of mouse hippocampus. Inspired by our biological findings, we propose a new loss function that improves neural network performance in multitask learning.
+
+- title: Ismaeel and Sebastian presenting at Cosyne
+  date: 2024-02-04
+  text: Ismaeel will be presenting &ldquo;Seizure susceptibility is related to task computations in recurrent neural networks&rdquo; and Sebastian, in collaboration with <a href="https://www.scl.rs/scl-members/members/28-scl-members/members/914-igor-franovic">Igor Franović</a> of the University of Belgrade, will be presenting &ldquo;Metabolic dynamics shapes neural activity: a framework for control of epilepsy&rdquo; at Cosyne 2024.
