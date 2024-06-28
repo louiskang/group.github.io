@@ -1,3 +1,15 @@
+- title: Seizure control under the ketogenic diet
+  id: ketogenic
+  image: "/media/research-ketogenic.png"
+  text:
+    - Despite the rapid progress in development of anti-convulsive medications, about a third of epilepsy patients suffer from drug-resistant forms of disease and require alternative non-pharmacological therapies. One such alternative is provided by ketogenic diet, a dietary treatment based on replacing carbohydrates with fat, triggering in that way an energy metabolism switch in the main source of ATP production. While being practiced since the 1920s, the precise metabolic pathways owing to the efficacy of ketogenic diet remain not well understood. In our model, we address the mechanism of metabolic feedback induced by ketogenic diet where the change in the main source of ATP production activates ATP-dependent potassium channels, which in turn generates an additional outward potassium flux causing membrane hyperpolarization. The latter decreases neuronal excitability and firing frequency, altering the seizure-related onset of synchrony and providing new means of switching neuronal populations to healthy states with asynchronous rare spiking activity.  
+    - To model the metabolic feedback associated with ketogenic diet, we coupled a neuronal population that includes ATP-dependent potassium channels with an additional equation describing the dynamics of global ATP concentration. We derived a corresponding mean-field model based on the formalism of next-generation neural mass models for which we were able to perform a detailed bifurcation analysis revealing two distinct scenarios connecting normal asynchronous and seizure-like synchronous activity. We found supercritical (continuous) but also subcritical (hysteretic) transitions involving multistability from which the synchronous seizure-like states emerge. Using this, we demonstrated three potential control mechanisms for switching between asynchronous and synchronous states, involving parametric perturbation of the ATP production rate, external stimulation currents, or pulse-like ATP shocks, and indicated likely therapeutic advantages of hysteretic scenarios.
+  refs:
+    - citation: Eydam S, Franovi&cacute; &amp; Kang L. Control of seizure-like dynamics in neuronal populations with excitability adaptation related to ketogenic diet. <i>Chaos</i> 34, 053128 (2024).
+      link: "https://pubs.aip.org/aip/cha/article/34/5/053128/3294348/Control-of-seizure-like-dynamics-in-neuronal"
+      pdf: "/docs/eydam2024ketogenic.pdf"
+
+
 - title: Examples and concepts from complementary encodings
   id: complementary
   image: "/media/research-complementary.png"
