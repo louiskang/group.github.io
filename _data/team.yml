@@ -80,3 +80,19 @@
   years: 2024
   history:
     - "2024 update: Undergraduate medical student at the University of Tokyo"
+
+- name: Mira Jiang
+  role: Undergraduate Student Intern
+  photo: "/media/team-mira.jpg"
+  about: I am a third year undergraduate student at Harvard studying computational neuroscience and English. My current research involves using recurrent neural networks to investigate early-stage Alzheimer's disease.
+  email: mirajiang@college.harvard.edu
+  alum: false
+  years: 2024
+
+- name: Amith Hariharasudhan
+  role: PhD Student Intern
+  photo: "/media/team-amith.jpg"
+  about: I have recently completed my Master’s in Neuroscience at UCL and will be starting my PhD there in September. My current research involves grid cell continuous attractor networks. I will be modeling Alzheimer’s disease and its associated loss of navigational capabilities.
+  email: h.amith02@gmail.com
+  alum: false
+  years: 2024
