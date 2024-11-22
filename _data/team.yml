@@ -86,13 +86,26 @@
   photo: "/media/team-mira.jpg"
   about: I am a third year undergraduate student at Harvard studying computational neuroscience and English. My current research involves using recurrent neural networks to investigate early-stage Alzheimer's disease.
   email: mirajiang@college.harvard.edu
-  alum: false
+  alum: true
   years: 2024
+  history:
+    - "2024 update: Undergraduate student at Harvard University"
 
 - name: Amith Hariharasudhan
   role: PhD Student Intern
   photo: "/media/team-amith.jpg"
   about: I have recently completed my Master’s in Neuroscience at UCL and will be starting my PhD there in September. My current research involves grid cell continuous attractor networks. I will be modeling Alzheimer’s disease and its associated loss of navigational capabilities.
   email: h.amith02@gmail.com
+  alum: true
+  years: 2024
+  history:
+    - "2024 update: PhD student at University College London"
+
+- name: Jason Li
+  role: Master's Student Intern
+  photo: "/media/team-jason.jpg"
+  about: Currently, I’m a master’s student in Computational Neuroscience, with my home university being ETH Zurich. My masters research here at RIKEN is centered upon probing aspects of episodic memory&mdash;such as the dynamics of schematic learning&mdash;through the use of Artificial Neural Networks. In my free time, I enjoy amateur photography, nearly every outdoor activity imaginable, and playing piano.
+  email: jason.li@riken.jp
+  website: https://jli12.github.io/
   alum: false
   years: 2024
