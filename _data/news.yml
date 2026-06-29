@@ -126,6 +126,10 @@
   date: 2024-05-31
   text: Taka has worked with us for the last two months and made significant contributions to a new project on Alzheimer's disease. He is a medical student at the University of Tokyo, and although he is interested in clinical medicine, we hope that he remains active in computational neuroscience research as well.
 
+- title: Louis presents at the Simons Institute
+  date: 2024-06-03
+  text: Louis joins the Summer Cluster in AI, Psychology, and Neuroscience at the Simons Institute for the Theory of Computing at UC Berkeley. He presents on complementary memory encodings as a neural network computation with relevance to both biological and artificial neural networks.
+
 - title: A summer with interns Mira and Amith
   date: 2024-06-17
   text: Mira, an undergraduate student at Harvard University, and Amith, a recent Master's graduate from University College London, have arrived as CBS Summer Program interns. They will be following Taka's footsteps and continuing our investigation on Alzheimer's disease.
@@ -138,6 +142,10 @@
   date: 2024-10-01
   text: Jason is a Master's student in Neural Computation at ETH Zurich and the University of Zurich. Louis will be co-mentoring his thesis along with Benjamin Grewe at ETH Zurich. Stay tuned as he dives into how neural networks form and use schemas during continual learning.
 
+- title: Louis presents at Korea Brain
+  date: 2024-10-18
+  text: Louis presents on new work about a connection between neural network computation and susceptibility to seizures at the Korea Society for Brain and Neural Sciences conference.
+
 - title: Louis relives his early days in physics
   date: 2024-11-15
   text: "Louis guided the talended graduate student Shuxu Wang in Yasuhiro Ishida's group at RIKEN Center for Emergent Matter Science on some theoretical calculations for their work on chiral colloidal membranes. Read the paper in <a href='https://www.nature.com/articles/s41467-024-54217-x'>Nature Communications</a>."
@@ -145,3 +153,15 @@
 - title: Sebastian guest edits a Focus Issue of Chaos
   date: 2024-12-02
   text: "Sebastian proposed a special issue for the journal Chaos entitled <a href='https://pubs.aip.org/cha/collection/1220/Regime-switching-in-coupled-nonlinear-systems'>&ldquo;Regime switching in coupled nonlinear systems: sources, prediction, and control&rdquo;</a> and served as a Guest Editor. It has just been published, along with <a href='https://pubs.aip.org/aip/cha/article/34/12/120401/3323324/Regime-switching-in-coupled-nonlinear-systems'>a wonderful overview of the topic</a>."
+
+- title: Cory joins and leaves as an intern
+  date: 2025-08-31
+  text: Cory spent his summer with us exploring how to model dreams in neural networks. He is an undergraduate from Harvard University and arrives through the support of the Reischauer Institute of Japanese Studies.
+
+- title: Louis presents at World Sleep Congress
+  date: 2025-09-09
+  text: Louis &ldquo;Neural network models of hippocampal computations during sleep&rdquo; at World Sleep Congress in Singapore. His presentation covered topics in both NREM and REM sleep through his previous work on grid cell replay and ongoing work with Cory on dreaming.
+
+- title: Louis joins the UCSF Neuroscience Retreat
+  date: 2025-09-27
+  text: The Neuroscience Graduate Group at University of California, San Francisco has invited Louis as the RIKEN CBS faculty guest to its annual retreat. He is bound with fellow CBS members Hildelith Leyser and Kai Sato for the beautiful and historic Asilomar Conference Grounds!
