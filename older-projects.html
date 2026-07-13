@@ -1,0 +1,54 @@
+---
+layout: sub
+title: Older projects
+custom_css:
+  - /css/older-projects.css
+back_anchor: research
+---
+
+{% for project in site.data.research %}
+  {% if project.older %}
+    <div class="project">
+      <div class="col-lg-7">
+        {% if project.mp4 %}
+          <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
+        {% elsif project.image %}
+          <img class="img-fluid" src="{{ project.image }}" alt=""/>
+        {% endif %}
+      </div>
+      <h2 class="title">{{ project.title }}</h2>
+      {% for par in project.text %}
+        <p class="text">{{ par }}</p>
+      {% endfor %}
+      {% if project.refs %}
+        <table class="references">
+          {% for ref in project.refs %}
+            <tr>
+              {% capture link %}
+                <th><a class="btn btn-outline-primary" href="{{ ref.link }}">{{ site.icons.link }}</a></th>
+              {% endcapture %}
+              {% capture pdf %}
+                <th><a class="btn btn-outline-primary" href="{{ ref.pdf }}">{{ site.icons.pdf }}</a></th>
+              {% endcapture %}
+              {% if ref.link and ref.pdf %}
+                {{ link }}
+                {{ pdf }}
+              {% elsif ref.link %}
+                <th></th>
+                {{ link }}
+              {% elsif ref.pdf %}
+                <th></th>
+                {{ pdf }}
+              {% else %}
+                <th></th>
+                <th></th>
+              {% endif %}
+              <td>{{ ref.citation }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endfor %}
+

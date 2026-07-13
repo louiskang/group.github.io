@@ -60,6 +60,7 @@
     - citation: Kang L, Xu B &amp; Morozov D. Evaluating state space discovery by persistent cohomology in the spatial representation system. <i>Front Comput Neurosci</i> 15, 616748 (2021).
       link: "https://www.frontiersin.org/articles/10.3389/fncom.2021.616748"
       pdf: "/docs/kang2021cohomology.pdf"
+  older: true
 
 - title: Grid cell organization and dynamics
   id: replay
@@ -74,4 +75,5 @@
     - citation: Kang L &amp; DeWeese MR. Replay as wavefronts and theta sequences as bump oscillations in a grid cell attractor network. <i>eLife</i> 8, e46351 (2019).
       link: "https://elifesciences.org/articles/46351"
       pdf: "/docs/kang2019replay.pdf"
+  older: true
 

@@ -2,68 +2,74 @@
 <section class="research-section py-4 py-lg-0" id="research">
   <div class="container">
     {% for project in site.data.research %}
-      {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if parity == 'odd' %}{% assign left = true %}{% else %}{% assign left = false %}{% endif %}
+      {% unless project.older %}
+        {% capture parity %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if parity == 'odd' %}{% assign left = true %}{% else %}{% assign left = false %}{% endif %}
 
-      <div class="project d-flex flex-column align-items-end my-6 my-lg-8">
+        <div class="project d-flex flex-column align-items-end my-6 my-lg-8">
 
-        <div class="d-flex flex-column {% if left %} flex-lg-row {% else %} flex-lg-row-reverse align-items-end {% endif %} no-gutters my-lg-3">
-          <div class="d-flex {% unless left %} flex-lg-row-reverse {% endunless %} col-lg-7 mb-1 mb-lg-0">
-            <button type="button" class="btn-null content"><div class="container px-0">
-              {% if project.mp4 %}
-                <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
-              {% elsif project.image %}
-                <img class="img-fluid" src="{{ project.image }}" alt=""/>
-            {% endif %}
-            </div></button>
+          <div class="d-flex flex-column {% if left %} flex-lg-row {% else %} flex-lg-row-reverse align-items-end {% endif %} no-gutters my-lg-3">
+            <div class="d-flex {% unless left %} flex-lg-row-reverse {% endunless %} col-lg-7 mb-1 mb-lg-0">
+              <button type="button" class="btn-null content"><div class="container px-0">
+                {% if project.mp4 %}
+                  <video autoplay loop muted playsinline class="figure img-fluid"><source src="{{ project.mp4 }}" type="video/mp4"></video>
+                {% elsif project.image %}
+                  <img class="img-fluid" src="{{ project.image }}" alt=""/>
+                {% endif %}
+              </div></button>
+            </div>
+            <div class="head d-flex flex-row-reverse flex-lg-column align-items-center {% if left %} align-items-lg-start {% else %} align-items-lg-end {% endif %} justify-content-end col-lg-5 my-2 my-lg-3 {% if left %} ml-lg-4 text-left {% else %} mr-lg-4 text-lg-right {% endif %}">
+              <button type="button" class="btn-null content"><h3 class="title mb-0 mb-lg-2">{{ project.title }}</h3></button>
+              <button type="button" class="btn btn-outline-primary toggle-text icon" data-toggle="collapse" data-target="#{{ project.id }}" aria-expanded="false" aria-controls="{{ project.id }}">
+                <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
+              </button>
+            </div>
+
           </div>
-          <div class="head d-flex flex-row-reverse flex-lg-column align-items-center {% if left %} align-items-lg-start {% else %} align-items-lg-end {% endif %} justify-content-end col-lg-5 my-2 my-lg-3 {% if left %} ml-lg-4 text-left {% else %} mr-lg-4 text-lg-right {% endif %}">
-            <button type="button" class="btn-null content"><h3 class="title mb-0 mb-lg-2">{{ project.title }}</h3></button>
-            <button type="button" class="btn btn-outline-primary toggle-text icon" data-toggle="collapse" data-target="#{{ project.id }}" aria-expanded="false" aria-controls="{{ project.id }}">
-              <span><i class="material-icons">add</i></span><span class="toggle-hide"><i class="material-icons">remove</i></span>
-            </button>
+          <div class="container collapse" id="{{ project.id }}">
+
+            <div class="text col-lg-8 mt-2 mt-lg-0 {% if left %} ml-auto {% else %} mx-auto {% endif %} px-0">
+              {% for par in project.text %}
+                <p class="text-dark">{{ par }}</p>
+              {% endfor %}
+              {% if project.refs %}
+                <table class="references">
+                  {% for ref in project.refs %}
+                    <tr>
+                      {% capture link %}
+                        <th><a class="btn btn-outline-primary" href="{{ ref.link }}">{{ site.icons.link }}</a></th>
+                      {% endcapture %}
+                      {% capture pdf %}
+                        <th><a class="btn btn-outline-primary" href="{{ ref.pdf }}">{{ site.icons.pdf }}</a></th>
+                      {% endcapture %}
+                      {% if ref.link and ref.pdf %}
+                        {{ link }}
+                        {{ pdf }}
+                      {% elsif ref.link %}
+                        <th></th>
+                        {{ link }}
+                      {% elsif ref.pdf %}
+                        <th></th>
+                        {{ pdf }}
+                      {% else %}
+                        <th></th>
+                        <th></th>
+                      {% endif %}
+                      <td>{{ ref.citation }}</td>
+                    </tr>
+                  {% endfor %}
+                </table>
+              {% endif %}
+            </div>
           </div>
 
         </div>
-        <div class="container collapse" id="{{ project.id }}">
 
-          <div class="text col-lg-8 mt-2 mt-lg-0 {% if left %} ml-auto {% else %} mx-auto {% endif %} px-0">
-            {% for par in project.text %}
-              <p class="text-dark">{{ par }}</p>
-            {% endfor %}
-            {% if project.refs %}
-              <table class="references">
-                {% for ref in project.refs %}
-                  <tr>
-                    {% capture link %}
-                      <th><a class="btn btn-outline-primary" href="{{ ref.link }}">{{ site.icons.link }}</a></th>
-                    {% endcapture %}
-                    {% capture pdf %}
-                      <th><a class="btn btn-outline-primary" href="{{ ref.pdf }}">{{ site.icons.pdf }}</a></th>
-                    {% endcapture %}
-                    {% if ref.link and ref.pdf %}
-                      {{ link }}
-                      {{ pdf }}
-                    {% elsif ref.link %}
-                      <th></th>
-                      {{ link }}
-                    {% elsif ref.pdf %}
-                      <th></th>
-                      {{ pdf }}
-                    {% else %}
-                      <th></th>
-                      <th></th>
-                    {% endif %}
-                    <td>{{ ref.citation }}</td>
-                  </tr>
-                {% endfor %}
-              </table>
-            {% endif %}
-          </div>
-        </div>
-
-      </div>
-
+      {% endunless %}
     {% endfor %}
+
+    <div class="subpage-link pb-7 d-flex justify-content-center">
+      <a class="btn btn-outline-primary d-flex align-items-center" href="{% link older-projects.html %}">Older projects &nbsp; {{ site.icons.forward }}</a>
+    </div>
   </div>
 </section>

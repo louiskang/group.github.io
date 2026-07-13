@@ -1,0 +1,36 @@
+.project {
+  padding: 2rem 0 4rem 0;
+}
+
+.title {
+  padding: 1.5rem 0 1rem 0;
+}
+
+.text {
+  margin: 0 0 0.4rem 0;
+}
+
+.references th {
+  font-size: 0.9rem;
+  font-weight: 300;
+  vertical-align: top;
+  width: 2.2rem;
+}
+.references td {
+  font-size: 0.9rem;
+  vertical-align: top;
+  padding: 0 0 0.5rem 0.2rem !important;
+}
+.references .btn {
+  padding: 0.18rem 0.25rem;
+  margin: 0 0 0 0;
+}
+
+
+.date {
+  color: #808080;
+}
+
+.text, .references {
+  color: #202020;
+}
